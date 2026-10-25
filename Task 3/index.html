@@ -3,15 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AdminPro analytics dashboard">
     <link rel="stylesheet" href="style.css">
-    <title>Admin Analytics Dashboard</title>
+    <title>AdminPro | Analytics Dashboard</title>
 </head>
 <body>
-    <div class="cards">
-        <div>Total Revenue </div>
-        <div>Total Order </div>
-        <div>Active Users</div>
-        <div>Conversion Rate</div>
+    <div class="app-shell">
+        <aside class="sidebar">
+            <a class="logo" href="#"><span class="logo-mark">◉</span>AdminPro</a>
+            <nav aria-label="Dashboard navigation">
+                <a class="nav-item active" href="#dashboard"><span>⌂</span>Dashboard</a>
+                <a class="nav-item" href="#analytics"><span>⌁</span>Analytics</a>
+                <a class="nav-item" href="#users"><span>♙</span>Users</a>
+                <a class="nav-item" href="#orders"><span>▤</span>Orders</a>
+                <a class="nav-item" href="#products"><span>◇</span>Products</a>
+                <a class="nav-item" href="#settings"><span>⚙</span>Settings</a>
+            </nav>
+            <div class="profile">
+                <div class="profile-avatar">AT</div>
+                <span><strong>Ayush Tiwari</strong><small>Admin</small></span>
+            </div>
+        </aside>
+
+        <main class="dashboard" id="dashboard">
+            <header class="topbar">
+                <button class="menu-toggle" type="button" aria-label="Open navigation">☰</button>
+                <label class="search"><span>⌕</span><input type="search" placeholder="Search..."></label>
+                <div class="top-actions"><button type="button" aria-label="Notifications">♧</button><div class="top-avatar">AT</div></div>
+            </header>
+
+            <div class="content">
+                <div class="page-heading"><div><p class="breadcrumb">Overview / <span>Dashboard</span></p><h1>Dashboard</h1></div><button class="date-button">Last 30 days⌄</button></div>
+
+                <section class="kpi-grid" aria-label="Key performance indicators">
+                    <article class="kpi-card"><div class="kpi-icon revenue">♧</div><p>Total Revenue</p><strong>₹1,24,532</strong><small class="positive">↑ 12.5% <em>from last month</em></small></article>
+                    <article class="kpi-card"><div class="kpi-icon orders">▤</div><p>Total Orders</p><strong>892</strong><small class="positive">↑ 8.2% <em>from last month</em></small></article>
+                    <article class="kpi-card"><div class="kpi-icon users">♙</div><p>Active Users</p><strong>3,521</strong><small class="positive">↑ 5.4% <em>from last month</em></small></article>
+                    <article class="kpi-card"><div class="kpi-icon conversion">⌄</div><p>Conversion Rate</p><strong>4.2%</strong><small class="positive">↑ 2.1% <em>from last month</em></small></article>
+                </section>
+
+                <section class="report-grid">
+                    <article class="panel revenue-panel">
+                        <div class="panel-heading"><div><h2>Revenue Overview</h2><strong>₹1,24,532</strong></div><a href="#">This year⌄</a></div>
+                        <div class="line-chart"><div class="y-axis"><span>1.5L</span><span>1.0L</span><span>50K</span><span>0</span></div><div class="chart-area"><div class="line"></div><div class="chart-fill"></div><div class="x-axis"><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span></div></div></div>
+                    </article>
+                    <article class="panel orders-panel">
+                        <div class="panel-heading"><h2>Recent Orders</h2><a href="#">View all →</a></div>
+                        <div class="order-table"><div class="table-row table-head"><span>Customer</span><span>Amount</span><span>Status</span></div><div class="table-row"><span>Rahul Sharma</span><span>₹2,499</span><b class="delivered">Delivered</b></div><div class="table-row"><span>Priya Singh</span><span>₹4,000</span><b class="processing">Processing</b></div><div class="table-row"><span>Amit Kumar</span><span>₹1,299</span><b class="shipped">Shipped</b></div><div class="table-row"><span>Neha Gupta</span><span>₹3,799</span><b class="delivered">Delivered</b></div><div class="table-row"><span>Salil Verma</span><span>₹5,499</span><b class="cancelled">Cancelled</b></div></div>
+                    </article>
+                    <article class="panel traffic-panel"><div class="panel-heading"><div><h2>Traffic Overview</h2><strong>8,432</strong><small class="positive">↑ 10%</small></div><a href="#">⌄</a></div><div class="bar-chart"><div class="bars"><i style="--height:35%"></i><i style="--height:48%"></i><i style="--height:41%"></i><i style="--height:57%"></i><i style="--height:70%"></i><i style="--height:51%"></i><i style="--height:78%"></i><i style="--height:100%"></i></div><div class="x-axis"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div></div></article>
+                    <article class="panel products-panel"><div class="panel-heading"><h2>Top Products</h2><a href="#">View all →</a></div><div class="product-row product-head"><span>Product</span><span>Sales</span><span>Change</span></div><div class="product-row"><span>Laptop Pro</span><span>2,450</span><b>+12%</b></div><div class="product-row"><span>Wireless Earbuds</span><span>1,992</span><b>+8%</b></div><div class="product-row"><span>Smart Watch</span><span>1,203</span><b>+6%</b></div><div class="product-row"><span>Backpack</span><span>902</span><b>+4%</b></div></article>
+                </section>
+            </div>
+        </main>
     </div>
 </body>
 </html>
