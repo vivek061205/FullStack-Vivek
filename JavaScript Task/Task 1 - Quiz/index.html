@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- App shell and quiz screen -->
+    <main class="app-shell">
+        <header class="app-header">
+            <div>
+                <h1>Quiz</h1>
+            </div>
+            <button class="button button-secondary" id="restart-button" type="button">Restart</button>
+        </header>
+
+        <section class="screen" id="quiz-screen" aria-live="polite">
+            <div class="quiz-meta">
+                <span id="progress-label">Q1/25</span>
+                <span class="score-label">Score: <strong id="score-label">0</strong></span>
+            </div>
+            <div class="progress-track" aria-label="Quiz progress">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+
+            <article class="quiz-card">
+                <div class="question-heading">
+                    <span class="question-number" id="question-number">01</span>
+                    <h2 id="question-text"></h2>
+                </div>
+                <div class="timer-row">
+                    <span id="timer-label">30s remaining</span>
+                </div>
+                <div class="options" id="options" role="group" aria-label="Answer options"></div>
+                <div class="feedback" id="feedback" role="status" aria-live="polite" hidden>
+                    <strong id="feedback-title"></strong>
+                    <p id="feedback-explanation"></p>
+                </div>
+                <div class="quiz-actions">
+                    <button class="button button-primary" id="next-button" type="button" disabled>Next question</button>
+                </div>
+            </article>
+        </section>
+
+        <!-- Final score screen -->
+        <section class="screen results-screen" id="results-screen" hidden>
+            <p class="eyebrow">Quiz complete</p>
+            <h2>Your final score</h2>
+            <div class="score-ring" id="score-ring">
+                <strong id="final-score">0/25</strong>
+                <span id="final-percentage">0%</span>
+            </div>
+            <p class="rating-message" id="rating-message"></p>
+            <div class="results-actions">
+                <button class="button button-primary" id="review-button" type="button">Review Wrong Answers</button>
+                <button class="button button-secondary" id="results-restart-button" type="button">Restart</button>
+            </div>
+        </section>
+
+        <!-- Wrong-answer review screen -->
+        <section class="screen review-screen" id="review-screen" hidden>
+            <div class="review-heading">
+                <div>
+                    <p class="eyebrow">Review</p>
+                    <h2>Wrong answers</h2>
+                </div>
+                <span class="review-count" id="review-count"></span>
+            </div>
+            <div class="review-list" id="review-list"></div>
+            <p class="empty-review" id="empty-review" hidden>You got every question right. Incredible!</p>
+            <div class="results-actions">
+                <button class="button button-secondary" id="back-button" type="button">Back to score</button>
+                <button class="button button-primary" id="review-restart-button" type="button">Restart</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

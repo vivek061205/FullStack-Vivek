@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Northstar Supply | Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#">northstar<span>.</span></a>
+    <nav class="top-nav" aria-label="Main navigation">
+      <a class="active" href="#shop">Shop</a>
+      <a href="#new-arrivals">New arrivals</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="bag-link" href="#cart" aria-label="Shopping bag, 0 items">
+      <span class="bag-icon" aria-hidden="true">◌</span>
+      <span>Bag</span>
+      <span class="bag-count">0</span>
+    </a>
+  </header>
+
+  <main id="shop" class="shop-shell">
+    <section class="shop-intro" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">Curated essentials</p>
+        <h1 id="page-title">Good things,<br><em>well made.</em></h1>
+      </div>
+      <p class="intro-copy">Thoughtful objects for everyday rituals, chosen for their quality, utility, and quiet character.</p>
+    </section>
+
+    <div class="mobile-filter-row">
+      <details class="mobile-filters">
+        <summary><span>☷</span> Filter products</summary>
+        <div class="mobile-filter-content">
+          <fieldset>
+            <legend>Category</legend>
+            <label><input type="checkbox" checked> All products <span>24</span></label>
+            <label><input type="checkbox"> Home <span>8</span></label>
+            <label><input type="checkbox"> Carry <span>6</span></label>
+            <label><input type="checkbox"> Desk <span>5</span></label>
+          </fieldset>
+          <fieldset>
+            <legend>Price</legend>
+            <label><input type="radio" name="mobile-price" checked> Any price</label>
+            <label><input type="radio" name="mobile-price"> Under $50</label>
+            <label><input type="radio" name="mobile-price"> $50–$100</label>
+          </fieldset>
+        </div>
+      </details>
+      <span class="result-count">24 products</span>
+    </div>
+
+    <div class="content-layout">
+      <aside class="sidebar" aria-label="Product filters">
+        <div class="filter-heading">
+          <h2>Filter by</h2>
+          <button type="reset">Clear all</button>
+        </div>
+        <fieldset>
+          <legend>Category</legend>
+          <label><input type="checkbox" checked> All products <span>24</span></label>
+          <label><input type="checkbox"> Home <span>8</span></label>
+          <label><input type="checkbox"> Carry <span>6</span></label>
+          <label><input type="checkbox"> Desk <span>5</span></label>
+          <label><input type="checkbox"> Wellness <span>5</span></label>
+        </fieldset>
+        <fieldset>
+          <legend>Price range</legend>
+          <label><input type="radio" name="price" checked> Any price</label>
+          <label><input type="radio" name="price"> Under $50</label>
+          <label><input type="radio" name="price"> $50–$100</label>
+          <label><input type="radio" name="price"> Over $100</label>
+        </fieldset>
+        <fieldset>
+          <legend>Availability</legend>
+          <label><input type="checkbox"> In stock only</label>
+        </fieldset>
+      </aside>
+
+      <section class="products" aria-label="Product listing">
+        <div class="products-toolbar">
+          <p><strong>24</strong> products</p>
+          <label class="sort-label" for="sort">Sort by
+            <select id="sort" name="sort">
+              <option>Featured</option>
+              <option>Price: low to high</option>
+              <option>Price: high to low</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-image"><span class="badge sale-badge">Sale</span><img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=700&q=85" alt="Tan leather notebook on a table"></div>
+            <p class="category">Desk</p><h2>Field Notes Journal</h2>
+            <p class="rating" aria-label="4.9 out of 5 stars">★★★★★ <span>4.9</span></p>
+            <div class="price-row"><strong>$28</strong><del>$36</del></div><button class="cart-button">Add to cart</button>
+          </article>
+          <article class="product-card">
+            <div class="product-image"><span class="badge new-badge">New</span><img src="https://images.unsplash.com/photo-1523779917675-b6ed3a42a561?auto=format&fit=crop&w=700&q=85" alt="Cream ceramic mug on a wooden surface"></div>
+            <p class="category">Home</p><h2>Arc Ceramic Mug</h2>
+            <p class="rating" aria-label="4.8 out of 5 stars">★★★★★ <span>4.8</span></p>
+            <div class="price-row"><strong>$32</strong></div><button class="cart-button">Add to cart</button>
+          </article>
+          <article class="product-card">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1547949003-9792a18a2601?auto=format&fit=crop&w=700&q=85" alt="Olive canvas backpack resting against a wall"></div>
+            <p class="category">Carry</p><h2>Everyday Pack</h2>
+            <p class="rating" aria-label="5 out of 5 stars">★★★★★ <span>5.0</span></p>
+            <div class="price-row"><strong>$118</strong></div><button class="cart-button">Add to cart</button>
+          </article>
+          <article class="product-card">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1526045431048-f857369baa09?auto=format&fit=crop&w=700&q=85" alt="Amber glass candle with a warm flame"></div>
+            <p class="category">Wellness</p><h2>Sunday Candle</h2>
+            <p class="rating" aria-label="4.7 out of 5 stars">★★★★★ <span>4.7</span></p>
+            <div class="price-row"><strong>$42</strong><del>$48</del></div><button class="cart-button">Add to cart</button>
+          </article>
+          <article class="product-card">
+            <div class="product-image"><span class="badge new-badge">New</span><img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=700&q=85" alt="Minimal wooden side table in a bright room"></div>
+            <p class="category">Home</p><h2>Lowline Side Table</h2>
+            <p class="rating" aria-label="4.9 out of 5 stars">★★★★★ <span>4.9</span></p>
+            <div class="price-row"><strong>$164</strong></div><button class="cart-button">Add to cart</button>
+          </article>
+          <article class="product-card">
+            <div class="product-image"><span class="badge sale-badge">Sale</span><img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=85" alt="Black leather crossbody bag"></div>
+            <p class="category">Carry</p><h2>Loop Crossbody</h2>
+            <p class="rating" aria-label="4.6 out of 5 stars">★★★★★ <span>4.6</span></p>
+            <div class="price-row"><strong>$76</strong><del>$96</del></div><button class="cart-button">Add to cart</button>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
