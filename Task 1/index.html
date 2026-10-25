@@ -3,9 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="FlowTask helps modern teams build better products faster.">
+    <title>FlowTask | Build Better Products Faster</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header class="site-header">
+        <a class="brand" href="#" aria-label="FlowTask home">
+            <span class="brand-mark">✦</span>
+            <span>FlowTask</span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#docs">Docs</a>
+        </nav>
+        <div class="header-actions">
+            <a class="login-link" href="#login">Login</a>
+            <a class="button button-small" href="#get-started">Get Started</a>
+        </div>
+        <button class="menu-button" type="button" aria-label="Open menu">☰</button>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Work smarter</p>
+                <h1>Build Better Products<br>Faster With Our Platform</h1>
+                <p class="hero-description">Streamline your workflow, collaborate with your team and ship faster with our all-in-one platform.</p>
+                <div class="hero-actions">
+                    <a class="button" href="#get-started">Get Started <span>→</span></a>
+                    <a class="button button-outline" href="#demo">View Demo <span>▷</span></a>
+                </div>
+            </div>
+            <div class="hero-visual" aria-label="Product dashboard preview">
+                <div class="glow"></div>
+                <div class="dashboard-card">
+                    <div class="dashboard-top"><span></span><span></span><span></span><b>Analytics Overview</b></div>
+                    <div class="dashboard-content">
+                        <div class="chart">
+                            <div class="chart-label">Weekly activity <strong>+28%</strong></div>
+                            <svg viewBox="0 0 320 130" role="img" aria-label="Upward activity chart">
+                                <path class="chart-grid" d="M0 110H320M0 75H320M0 40H320"></path>
+                                <path class="chart-area" d="M0 105 C35 95 38 82 70 88 S105 70 135 78 S165 40 193 56 S224 35 250 44 S280 20 320 25 L320 130 L0 130Z"></path>
+                                <path class="chart-line" d="M0 105 C35 95 38 82 70 88 S105 70 135 78 S165 40 193 56 S224 35 250 44 S280 20 320 25"></path>
+                            </svg>
+                        </div>
+                        <div class="mini-stats"><span>Tasks completed <b>1,248</b></span><span>Team progress <b>82%</b></span></div>
+                    </div>
+                </div>
+                <span class="avatar avatar-one">A</span><span class="avatar avatar-two">M</span><span class="avatar avatar-three">J</span>
+            </div>
+        </section>
+
+        <section class="features" id="features">
+            <div class="section-heading">
+                <h2>Powerful Features</h2>
+                <p>Everything you need to build, manage and ship your product.</p>
+            </div>
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <div class="feature-icon">ϟ</div>
+                    <h3>Fast &amp; Reliable</h3>
+                    <p>Experience blazing fast performance with 99.9% uptime.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon">♧</div>
+                    <h3>Team Collaboration</h3>
+                    <p>Work together seamlessly with real-time updates.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon">◇</div>
+                    <h3>Secure by Design</h3>
+                    <p>Your data is always protected with enterprise-grade security.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <span>© 2024 FlowTask</span>
+        <span>Built for modern teams</span>
+    </footer>
 </body>
 </html>
